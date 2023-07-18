@@ -18,5 +18,5 @@ src/.vitepress/dist
 *.sln
 *.local
 
-package-lock.json
-yarn.lock
+# package-lock.json
+# yarn.lock
