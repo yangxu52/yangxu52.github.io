@@ -47,7 +47,7 @@ export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
   title: '云路杳杳',
-  description: '云路杳杳的博客',
+  description: "云路杳杳的个人博客。yangxu52's blog. 一个在路上的全干工程师。前端；后端；Java；Javascript；Vue; Spring",
   vite: {
     optimizeDeps: {
       include: ['element-plus'],
@@ -68,8 +68,16 @@ export default defineConfig({
     //   text: '去 GitHub 上编辑内容'
     // },
     nav: [
-      { text: '首页', link: '/' },
-      { text: '关于我', link: '/aboutme.html' }
+      { text: '关于我', link: '/about.html' },
+      { text: '技术笔记', link: '/note/' },
+      {
+        text: '组件笔记',
+        items: [
+          { text: 'Vue3 组件', link: '/component/vue3/' },
+          { text: 'Vue2 组件', link: '/component/vue2/' }
+        ]
+      },
+      { text: 'JavaScript', link: '/javascript/' }
     ],
     socialLinks: [
       {
