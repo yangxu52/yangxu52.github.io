@@ -9,5 +9,5 @@ blog:
 head:
   - - meta
     - name: keywords
-      content: 云路杳杳, yangxu52, 博客, 个人, 软件, 前端, 后端, Javascript, Java
+      content: 云路杳杳,云路杳杳博客,云路杳杳的个人博客,yangxu52
 ---
