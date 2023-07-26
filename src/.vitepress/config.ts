@@ -8,7 +8,7 @@ const blogTheme = getThemeConfig({
     {
       nickname: 'Vitepress',
       des: 'Vite & Vue Powered Static Site Generator',
-      avatar: { src: '/assets/Vitepress.png', alt: 'VitepressIcon' },
+      avatar: { src: '../assets/img/Vitepress.png', alt: 'VitepressIcon' },
       url: 'https://vitepress.vuejs.org/',
     },
   ],
