@@ -1,6 +1,6 @@
 ---
 title: Vue3 Echarts 通用组件
-description: 基于Vue3封装的echarts通用组件，支持自适应父容器大小，响应式数据
+description: Vue3 Echarts 通用组件，支持自适应父容器大小，响应式数据
 tags:
   - vue3
   - 组件封装
@@ -8,24 +8,17 @@ tags:
 head:
   - - meta
     - name: keywords
-      content: vue3, 组件, echarts, 自适应, 响应式
+      content: vue3,组件,echarts,自适应,响应式
 ---
 
 # Vue3 Echarts 通用组件
 
-基于 Vue3 封装的 echarts 通用组件，支持自适应父容器大小，响应式数据
+Vue3 Echarts 通用组件，支持自适应父容器大小，响应式数据
 
 ## 代码
 
-::: code-group
-
-```html [template]
-<template>
-  <div ref="chartDom" style="width: 100%; height: 100%"></div>
-</template>
-```
-
-```javascript [script]
+```vue [vue3 setup javascript]
+<script setup>
 import { onMounted, onBeforeUnmount, defineProps, watch, ref, shallowRef } from 'vue'
 import * as echarts from 'echarts'
 // echarts Dom
@@ -36,8 +29,8 @@ const chart = shallowRef(null)
 const props = defineProps({
   option: {
     type: Object,
-    require: true
-  }
+    require: true,
+  },
 })
 // 防抖函数
 const debounce = (method, delay) => {
@@ -82,13 +75,12 @@ watch(
     chart.value.setOption(value)
   }
 )
-```
+</script>
 
-```css [style]
-(empty)
+<template>
+  <div ref="chartDom" style="width: 100%; height: 100%"></div>
+</template>
 ```
-
-:::
 
 ## 注意事项
 
