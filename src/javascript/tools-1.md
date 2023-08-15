@@ -1,16 +1,16 @@
 ---
-title: Javascript 工具库
-description: Javascript编写的工具库，集成常见方法，节流，防抖，事件，格式化等
+title: javascript 工具库——防抖、节流、事件
+description: Javascript编写的工具库，集成常见方法，节流，防抖，事件等
 tags:
   - Javascript
   - 工具
 head:
   - - meta
     - name: keywords
-      content: Javascript, 工具, 工具库, 防抖, 节流, 事件, 格式化
+      content: Javascript, 工具, 工具库, 防抖, 节流, 事件
 ---
 
-# Javascript 工具库
+# javascript 工具库——防抖、节流、事件
 
 Javascript 编写的工具库，集成常见方法，节流，防抖，事件，格式化等
 
@@ -53,7 +53,9 @@ export const debounce = (callback, wait = 500, immediate = false) => {
  * 原理：对函数进行间隔操作，在规定间隔时间内，如有重复操作，则清除掉本次操作
  * @param {Function} callback
  * @param {number} wait 间隔时间，默认500ms
- * @param {{ leading: boolean, trailing: boolean }} options leading: false 禁用第一次执行， trailing: false 禁用停止触发的回调 }
+ * @param {{ leading: boolean, trailing: boolean }} options 配置选项
+ *        - leading: false 禁用第一次执行，
+ *        - trailing: false 禁用停止触发的回调
  */
 export const throttle = (callback, wait = 500, options = {}) => {
   let time, context, args

@@ -13,4 +13,5 @@ publish: false
 
 ## 目录
 
-- [javascript 工具库](./tools)
+- [javascript 工具库——防抖、节流、事件](./tools-1)
+- [javascript 工具库——类型判断](./tools-2)
