@@ -39,6 +39,7 @@ export default defineConfig({
         ],
       },
       { text: 'JavaScript', link: '/javascript/' },
+      { text: 'AI', link: '/ai/' },
     ],
 
     editLink: {
