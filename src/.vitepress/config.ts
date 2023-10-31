@@ -49,7 +49,7 @@ export default defineConfig({
     lastUpdatedText: '上次更新于',
     socialLinks: [{ icon: 'github', link: 'https://github.com/yangxu52' }],
     footer: {
-      message: '<a target="_blank" href="https://theme.sugarat.top/"> Power By @sugarat/theme@0.1.35 </a>',
+      message: '<a target="_blank" href="https://theme.sugarat.top/"> Power By @sugarat/theme@0.2.6 </a>',
       copyright: 'MIT Licensed | Copyright© yangxu52',
     },
   },

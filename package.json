@@ -11,14 +11,12 @@
     "serve": "vitepress serve src"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.1.0",
-    "@sugarat/theme": "^0.1.41",
-    "element-plus": "^2.3.9",
-    "vue": "^3.3.4"
+    "@sugarat/theme": "^0.2.6",
+    "element-plus": "^2.4.1"
   },
   "devDependencies": {
-    "sass": "^1.65.1",
-    "typescript": "^5.1.6",
-    "vitepress": "1.0.0-rc.4"
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vitepress": "1.0.0-rc.24"
   }
 }
