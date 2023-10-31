@@ -24,13 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: pnpm
 
       - name: 安装依赖
-        run: npm ci
+        run: pnpm install
 
       - name: 构建文档
-        run: npm run build
+        run: pnpm run build
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
